@@ -156,8 +156,8 @@ color: #2E2F42;
     padding-bottom: 120px;}
 
 .hero{
-    background-image: var(--gra), url(../images/people-office.jpg);
-    background-size: 1440px 600px;
+    background-image: var(--gra), url(../images/bg/mobail-dark-bg.jpg);
+    background-size: 428px 432px;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
@@ -166,6 +166,19 @@ color: #2E2F42;
 } 
 .hero-bg{background-color: #2E2F42;
 }
+
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: 
+    var(--gra), url('../images/bg/mobail-dark-bg@2x.jpg');
+    background-size: 428px 432px;
+  }
+}
+
+
 .box-hero{   
     display: flex;
     justify-content: space-around;
@@ -173,7 +186,7 @@ color: #2E2F42;
 }
 
 .title-hero {
-    width: 320px;
+    max-width: 320px;
     height: 80px;
     font-size: 32px;
     line-height: 1.11;
@@ -365,7 +378,7 @@ display: none;}
 
 .we-doing-list{
     display: none}
-    
+
 /* ________________________________________________________SECT4 */
 .our-team {
     background-color:#F4F4FD;;

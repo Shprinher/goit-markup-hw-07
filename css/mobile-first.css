@@ -19,8 +19,6 @@
   .we-doing-list{
     display: none;
   }
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -56,9 +54,24 @@
     margin-left: auto;
 }
 
+.hero{
+  background-image: var(--gra), url(../images/bg/tablete-dark-bg.jpg);
+  background-size: 768px 436px;
+  padding-bottom: 108px;
+} 
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: 
+    var(--gra), url('../images/bg/tablete-dark-bg@2x.jpg');
+    background-size: 768px 436px;
+  }
+}
 
 .title-hero {
-    width: 496px;
+    max-width: 496px;
     height: 120px;
     font-size: 56px;
     line-height: 1.07;
@@ -127,12 +140,14 @@
 }
 
 
+
 @media screen and (min-width: 1200px) {
 
   .container {
     width: 1158px;}
 
   .current::after{bottom: -28px;}
+
   .contacts{  
     display: flex;
     gap: 40px;
@@ -141,11 +156,20 @@
   line-height: 1.5px;
   letter-spacing: 0.02em;}
 
+    .hero{
+      background-image: var(--gra), url(../images/bg/desktop-dark-bg.jpg);
+      background-size: 1400px 600px;
+      padding-top: 188px;
+      padding-bottom: 188px;}
 
-  .hero{
-    padding-top: 188px;
-    padding-bottom: 188px;}
-
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      .hero {
+        background-image: 
+        var(--gra), url('../images/bg/desktop-dark-bg@2x.jpg');
+        background-size: 1400px 600px;
+      }}
 
     .advantages-icon-box{
         display: flex;
@@ -201,6 +225,8 @@
     margin-right: 80px;
   }
 }
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container-mini{
