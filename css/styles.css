@@ -249,12 +249,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .list-buttons{
-
-    margin-bottom: 72px;
+    margin-bottom: 48px;
     display: flex;
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: start; 
 
-    gap:24px
+    gap:24px;
+    row-gap: 16px;
 }
 .button-section{
     padding-top: 96px;}
@@ -262,6 +263,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .images-content{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     row-gap: 48px;
 }
@@ -279,7 +281,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .photo-item-link{
-    width: calc((100% - 2 * 24px) / 3 );
+    display: block;
+    width: 396px;
 }
 
 .photo-item-link:is(:hover, :focus) .photo-top-text{
