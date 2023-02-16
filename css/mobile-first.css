@@ -35,6 +35,10 @@
   }
 }
 
+/* .list-buttons{
+  margin-bottom: 72px;
+} */
+
 @media screen and (min-width: 768px) {
   .header-mob-menu-open {
     display: none;
@@ -171,10 +175,6 @@
   line-height: 1.5px;
   letter-spacing: 0.02em;
 }
-.modal {
-  top: 50%;
-transform: translate(50%, -50%);
-max-width: 408px;}
 
 .hero{
   padding-top: 188px;
