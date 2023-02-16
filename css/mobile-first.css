@@ -13,6 +13,20 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .hero{
+    background-image: var(--gra), url(../images/bg/tablete-dark-bg.jpg);
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .hero {
+      background-image: 
+      var(--gra), url('../images/bg/tablete-dark-bg@2x.jpg');
+    }
+  }
+
   .title-jobs{
     display: none;
   }
@@ -53,20 +67,17 @@
     font-style: normal;
     margin-left: auto;
 }
-
 .hero{
-  background-image: var(--gra), url(../images/bg/tablete-dark-bg.jpg);
-  background-size: 768px 436px;
+  background-image: var(--gra), url(../images/bg/desktop-dark-bg.jpg);
   padding-bottom: 108px;
-} 
+}
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
   .hero {
     background-image: 
-    var(--gra), url('../images/bg/tablete-dark-bg@2x.jpg');
-    background-size: 768px 436px;
+    var(--gra), url('../images/bg/desktop-dark-bg@2x.jpg');
   }
 }
 
@@ -77,6 +88,10 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     line-height: 1.07;
     margin-bottom: 48px;
 }
+.title-general{
+  text-align: left;}
+
+
 
     .advantages-list{
         display: flex;
@@ -154,22 +169,25 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     
   font-size: 16px;
   line-height: 1.5px;
-  letter-spacing: 0.02em;}
+  letter-spacing: 0.02em;
+}
+.modal {
+  top: 50%;
+transform: translate(50%, -50%);
+max-width: 408px;}
 
-    .hero{
-      background-image: var(--gra), url(../images/bg/desktop-dark-bg.jpg);
-      background-size: 1400px 600px;
-      padding-top: 188px;
-      padding-bottom: 188px;}
+.hero{
+  padding-top: 188px;
+  padding-bottom: 188px;}
 
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-      .hero {
-        background-image: 
-        var(--gra), url('../images/bg/desktop-dark-bg@2x.jpg');
-        background-size: 1400px 600px;
-      }}
+
+      .title-general{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;}
+
+        .text-general{
+          font-weight: 400;}
 
     .advantages-icon-box{
         display: flex;
@@ -230,6 +248,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container-mini{
-    width: 552px;
+    width: 582px;
   }
 }

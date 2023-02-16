@@ -14,21 +14,27 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="body">
+<body class="body no-scroll">
+    <!--___________________________________HEADER___________ -->
     <header class="page-header">
 <div class="container header-conteiner">
-    <nav class="navigation">
-        <a class="link logo-link" href="./index.html"><span class="color-dark-logo">WEB</span>STUDIO</a>
-            <ul class="list menu menu-item">
-                <li><a class="link link-color portfolio" href="./index.html">Studio</a></li>
-                <li><a class="link link-color studio current" href="./portfolio.html"> Portfolio</a></li>
+        <nav class="navigation">
+            <a class="link logo-link" href="./index.html"><span class="color-dark-logo">WEB</span>STUDIO</a>
+            <ul class="list header-menu-item">
+                <li><a class="link link-color current" href="./index.html">Studio</a></li>
+                <li><a class="link link-color" href="./portfolio.html"> Portfolio</a></li>
                 <li><a class="link link-color" href="">Contacts</a></li>
             </ul>
-    </nav>
+        </nav>
+        <button type="button" class="header-mob-menu-open js-open-menu">
+            <svg class="header-burger" width="32" height="22" data-menu-open>
+                <use href="./images/sprite.svg#icon-hamburger"></use>
+            </svg>
+        </button>
     <address class="address">
         <ul class="contacts list">
-            <li><a class="link link-color mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link link-color" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li><a class="link link-color " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link link-color " href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
 </div>
