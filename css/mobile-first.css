@@ -54,7 +54,6 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
 
-    color: #f34f0e;
     }
  
 .navigation{
@@ -68,6 +67,10 @@
     font-style: normal;
     margin-left: auto;
 }
+.header-link-mail{
+  margin-bottom: 4px;
+}
+
 .hero{
   background-image: var(--gra), url(../images/bg/desktop-dark-bg.jpg);
   padding-bottom: 108px;
@@ -124,6 +127,13 @@
         row-gap: 64px;
     }
 
+    .customers-icon-list{gap: 24px;}
+
+    .customers-icon-list-item{ 
+      width: calc((100% - 24px * 2) / 3);
+  }
+
+
     .footer-flex{
       display: flex;
       justify-content: start;
@@ -151,15 +161,29 @@
 .flex-subscribe-btn{
   display: flex;
   gap: 24px;
-  align-items: baseline;
-}
+  align-items: baseline;}
+/* _________________________portfolio */
+
 .list-buttons{
   margin-bottom: 72px;
   justify-content: center; 
 }
-.photo-item-link{
+.photo-item{
   width: 356px;
 }
+.button-section{
+  padding-top: 64px;
+padding-bottom: 96px;}
+
+
+.images-content{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 24px;
+row-gap: 48px;}
+
 }
 
 
@@ -180,6 +204,7 @@
 }
 
 .hero{
+  background-size: 1440px 600px;
   padding-top: 188px;
   padding-bottom: 188px;}
 
@@ -232,6 +257,10 @@
 .title-item-team{
         width: calc((100% - 3 * 24px) / 4);}
 
+        .customers-icon-list-item{ 
+          width: calc((100% - 24px * 5) / 6);
+      }
+
 .footer-flex{
   gap: 0;
 }
@@ -245,10 +274,14 @@
     margin-bottom: 0;
     margin-right: 80px;
   }
-
-  .photo-item-link{
+/* ________________________portfolio */
+.photo-item{
     width: calc((100% - 2 * 24px) / 3 );
 }
+.button-section{
+  padding-top: 64px;
+padding-bottom: 96px;}
+
 }
 
 

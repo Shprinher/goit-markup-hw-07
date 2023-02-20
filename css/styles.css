@@ -129,7 +129,7 @@ color: #2E2F42;
 .current::after{
         content: '';
         position: absolute;
-        bottom: -32px;
+        bottom: -34px;
         right: 0;
         height: 4px;
         width: 100%;
@@ -164,6 +164,7 @@ color: #2E2F42;
     padding-top: 112px;
     padding-bottom: 112px;
 } 
+
 .hero-bg{background-color: #2E2F42;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 479px),
@@ -258,14 +259,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     row-gap: 16px;
 }
 .button-section{
-    padding-top: 96px;}
+    padding-top: 48px;
+padding-bottom: 48px;}
 
-.images-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-    row-gap: 48px;
+.images-content:not(:last-child){
+    margin-bottom: 48px;
 }
 .content{
     padding-top: 32px;
@@ -274,16 +272,22 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid #E7E9FC;
     border-top: none;}
 
-.photo-item{
+.photo-item{ 
+    width: 396px;
+
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.title-general-portf{
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
 
-.photo-item-link{
-    display: block;
-    width: 396px;
-}
+    color: #2E2F42;}
+
+
 
 .photo-item-link:is(:hover, :focus) .photo-top-text{
     transform: translatey(0%);
@@ -472,7 +476,6 @@ border-radius: 0px 0px 4px 4px;}
     justify-content: center;
     align-items: center;
     height: 88px;
-    width: 168px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
 
@@ -484,11 +487,14 @@ border-radius: 0px 0px 4px 4px;}
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 24px;  
+    gap: 16px;  
     row-gap: 72px;
     }
 
-
+    .customers-icon-list-item{ 
+        height: 88px;
+        width: calc( ( 100% - 16px ) / 2);
+    }
 
 .icon-compani{
     align-items: center;
