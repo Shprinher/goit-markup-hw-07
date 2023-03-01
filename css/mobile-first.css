@@ -291,3 +291,38 @@ padding-bottom: 96px;}
     width: 582px;
   }
 }
+
+
+.section-restaurant-hero{
+  position: relative;
+}
+
+
+.restaurant-hero-title{
+  margin-top: 204px;
+  font-size: 90px;
+  line-height: 1;
+}
+
+.restaurant-hero-btn{
+  margin-bottom: 204px;
+}
+
+.restaurant-hero-slide-pic-container{
+  position: absolute;
+  top: 30px;
+  right: auto;
+} 
+}
+.room-hero-gallery {
+  width: 705px;
+  margin-left: auto;
+  margin-bottom: 0;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}.room-hero .button-wrap {
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 30px;
+  right: 600px;
